@@ -45,7 +45,7 @@ else if(!cssFiles.length)
 {haveMatch=true;}
 else if(cssFiles.length&&this.inArray(this.basename(link.href),cssFiles))
 {haveMatch=true;}
-if(link.href.indexOf(window.location.href)>-1&&haveMatch)
+if(link.href.indexOf(document.domain)>-1&&haveMatch)
 {var newTime=phpjs.filemtime(this.getRandom(link.href));if(link.last&&newTime)
 {if(link.last!=newTime)
 {this.swapFile(link.href);}}
